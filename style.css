@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Bungee Shade', cursive;
+    background: linear-gradient(-45deg, #474747, #0c0c0c, #b9a94b, #ecde19);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+
+.wrapper {
+    padding: 50px;
+    width: 600px;
+    background-image: linear-gradient(#FFD700, #FF8C00);
+    color: #000;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #FFD700;
+}
+
+.wrapper h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.wrapper p {
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.wrapper .rate-info {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.app-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-body input {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 40px;
+    font-family: 'Tomorrow', sans-serif;
+}
+
+.app-body input, .app-body select {
+    color: #fff;
+    border: none;
+    background: none;
+    text-align: center;
+}
+
+.app-body input:focus, .app-body select:focus {
+    outline: none;
+    color: black;
+}
+
+.app-body select {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 35px;
+    font-family: 'Kumar One', cursive;
+}
+
+.app-body option {
+    color: black;
+}
+
+.section-left,
+.section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swap {
+    align-self: flex-end;
+    margin: 5px;
+    padding: 10px 40px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    transition: all .2s;
+}
+
+.swap:hover {
+    background-color: black;
+    color: white;
+}
+
+.swap:focus {
+    outline: none;
+}
